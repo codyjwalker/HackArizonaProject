@@ -16,9 +16,8 @@ class PrescriptionTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "My Prescriptions"
 
-        // Load the sample data.
-        loadSamplePrescriptions()
     }
 
     override func didReceiveMemoryWarning() {
@@ -106,17 +105,6 @@ class PrescriptionTableViewController: UITableViewController {
     
     //MARK: Private Methods
     
-    private func loadSamplePrescriptions() {
-        
-        guard let prescription1 = Prescription(name: "molly", notes: "she's a good gal", pillCount: 69, dayArray: [1, 0, 1, 0, 1, 0, 1], time: "3:21") else {
-            fatalError("Unable to insttantiate prescription1")
-        }
-        
-        
-        PrescriptionTableViewController.prescriptions += [prescription1]
-        
-        print("prescription1 added\n")
-        
-    }
+
 
 }

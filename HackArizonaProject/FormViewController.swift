@@ -13,8 +13,8 @@ class FormViewController: UIViewController {
     
     
     // the static variables ! ! !
-    static var theName = ""
-    static var theNotes = ""
+    static var theName = "Vitamin C"
+    static var theNotes = "take twice a day"
     static var arrayOfDays = [String]()
     static var numOfPills = 0
     static var theTime = "10:00"
