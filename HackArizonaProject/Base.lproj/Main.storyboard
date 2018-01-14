@@ -185,6 +185,7 @@
                                 </state>
                                 <connections>
                                     <action selector="submitButton:" destination="k6q-92-x1f" eventType="touchUpInside" id="5Jg-A4-vSQ"/>
+                                    <segue destination="vwk-GQ-g1O" kind="show" id="7kr-Jo-ayh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -26516,4 +26517,7 @@ lwAX6poAF+qfAAAAAAAABAEAAAAAAAAAWQAAAAAAAAAAAAAAAAAX6qE
         <image name="logo" width="975" height="400"/>
         <image name="viewPrescriptionsButton" width="400" height="350"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="7kr-Jo-ayh"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -112,7 +112,11 @@ class FormViewController: UIViewController {
         // * * * CREATE cell object with all 5 info. and add it to table view controller
         // * * * and array of cell objects * * *
         
+        guard let thePrescription = Prescription(name: FormViewController.theName, notes: FormViewController.theNotes, pillCount: FormViewController.numOfPills, dayArray: [1, 0, 1, 0, 1, 0, 1], time: FormViewController.theTime)  else {
+            fatalError("Unable to instantiate prescription1")
+        }
         
+        PrescriptionTableViewController.prescriptions += [thePrescription]
         
         
         

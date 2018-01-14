@@ -12,7 +12,7 @@ class PrescriptionTableViewController: UITableViewController {
     
     //MARK: Properties
     
-    var prescriptions = [Prescription]()
+    static var prescriptions = [Prescription]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,7 @@ class PrescriptionTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return prescriptions.count
+        return PrescriptionTableViewController.prescriptions.count
     }
 
     
@@ -46,7 +46,7 @@ class PrescriptionTableViewController: UITableViewController {
         }
         
         // Fetches the appropriate prescription for the data source layout.
-        let prescription = prescriptions[indexPath.row]
+        let prescription = PrescriptionTableViewController.prescriptions[indexPath.row]
         
         cell.nameLabel.text = prescription.name
         cell.countLabel.text = String(prescription.pillCount)
@@ -113,7 +113,7 @@ class PrescriptionTableViewController: UITableViewController {
         }
         
         
-        prescriptions += [prescription1]
+        PrescriptionTableViewController.prescriptions += [prescription1]
         
         print("prescription1 added\n")
         
